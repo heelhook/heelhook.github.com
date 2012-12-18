@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>acts_as_authentic nightmare - heelhook</title>
+  <meta name="author" content="Pablo Fernandez">
+
+  
+  <meta name="description" content="Acts_as_authentic Nightmare Jun 23rd, 2010 So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="heelhook" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37128640-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body >
+  <header role="banner" id="sidebar">
+    <!-- Logo -->
+<aside id="logo" class="clearfix">
+  <div class="clearfix">
+    <a href="/">heelhook</a>
+  </div>
+</aside>
+
+<ul id="menu">
+
+  <li class="title">
+    <h1 id="title"><a href="/">heelhook</a></h1>
+  </li>
+
+
+  <li class="author">
+    <h2 id="author">Pablo Fernandez</h2>
+  </li>
+
+
+</ul>
+<div class="social">
+
+    <a href="http://twitter.com/pablo2dot0/" class="twitter">twitter</a>
+
+
+    <a href="http://github.com/heelhook/" class="github">github</a>
+
+
+    <a href="http://www.linkedin.com/in//" class="linkedin">linkedin</a>
+
+    <a href="/atom.xml" class="rss">rss feed</a>
+</div>
+
+
+
+<!-- Octopress Love -->
+<aside id="octopress_linkback">
+  <a href="http://octopress.org/">
+    <span class="unicode_square">
+      <span class="unicode_circle">
+        &nbsp;
+      </span>
+    </span>
+    <span class="octopress">Powered by Octopress</span>
+  </a>
+</aside>
+
+  </header>
+  <section id="main">
+    <article class="post">
+  
+  <header>
+    
+      <h2 class="entry-title">Acts_as_authentic Nightmare</h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-23T23:10:00-03:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+<p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
+
+<p>Half an hour later I was pretty much ready to do some open heart surgery on authlogic, man is the configuration of act_as_authentic confusing! And of course, RTFMing doesn’t work, there is not a single example of how changing the default act_as_authentic configuration works!</p>
+
+<p>Searching around I found a few persons with the same problem and no solutions, so I thought I should share how I did it, or rather, what I did.</p>
+
+<p>This is the resulting code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">acts_as_authentic</span> <span class="k">do</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_uniqueness_of_email_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_length_of_login_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:minimum</span> <span class="o">=&gt;</span> <span class="mi">4</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_format_of_login_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:with</span> <span class="o">=&gt;</span> <span class="no">Authlogic</span><span class="o">::</span><span class="no">Regex</span><span class="o">.</span><span class="n">login</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_length_of_email_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:minimum</span> <span class="o">=&gt;</span> <span class="mi">4</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_confirmation_of_password_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_length_of_password_confirmation_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:minimum</span> <span class="o">=&gt;</span> <span class="mi">4</span> <span class="p">}</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So as you can see a couple of options are a bit lame, like having a minimum when the if is being set to false, well, if you remove the minumum validates_length_of will complain (it makes sense from validates_length_of point of view, after all, if you are never going to be using the validation why call the function at all?)</p>
+
+<p>I hope this helps and saves some time.</p>
+
+
+<div class="sharing-box">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/" data-size="large">Tweet</a>
+  
+  
+  
+</div>
+
+</article>
+
+  <section class="comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+    <nav role="navigation" id="pagination">
+
+</nav>
+  </section>
+  
+
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'heelhook';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/';
+        var disqus_url = 'http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>
