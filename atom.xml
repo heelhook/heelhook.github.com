@@ -4,7 +4,7 @@
   <title><![CDATA[heelhook]]></title>
   <link href="http://heelhook.github.com/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2012-12-19T14:01:17-03:00</updated>
+  <updated>2012-12-28T03:27:00-03:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[psyched!]]></title>
+    <link href="http://heelhook.github.com/blog/2012/12/27/psyched/"/>
+    <updated>2012-12-27T23:15:00-03:00</updated>
+    <id>http://heelhook.github.com/blog/2012/12/27/psyched</id>
+    <content type="html"><![CDATA[<p>I&#8217;m psyched, I&#8217;m now T minus ~20 hours away from the start of my journey around
+Southern Africa, loading my physical backpack and unloading my mental one.</p>
+
+<p>For the next few weeks I don&#8217;t expect to have internet access. I&#8217;ll be back on
+January 19th.</p>
+
+<p>And yes, I&#8217;ll repeat the cliché (hey, they are clichés for a reason, right?)</p>
+
+<blockquote><p>&#8220;Travel is fatal to prejudice, bigotry, and narrow-mindedness.&#8221; - Mark Twain</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Company Smells]]></title>
