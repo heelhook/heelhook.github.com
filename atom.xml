@@ -4,7 +4,7 @@
   <title><![CDATA[heelhook]]></title>
   <link href="http://heelhook.github.com/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2012-12-28T05:09:28-03:00</updated>
+  <updated>2012-12-28T05:13:00-03:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -18,13 +18,15 @@
     <link href="http://heelhook.github.com/blog/2012/12/28/iPad-blogging-on-the-go/"/>
     <updated>2012-12-28T05:02:00-03:00</updated>
     <id>http://heelhook.github.com/blog/2012/12/28/iPad-blogging-on-the-go</id>
-    <content type="html"><![CDATA[<p>And in preparations or my trip I looked into what possibilities I had for some
-light, offline-friendly blogging on my Jekyll blog.</p>
+    <content type="html"><![CDATA[<p>And in preparations for my trip I decided to look into what possibilities I had
+for some light, offline-friendly blogging on my Jekyll blog.</p>
 
-<p>Turns out this is easier than it should be, a mix of iA for iPad, Dropbox and a
-simple deamon running through <code>incron</code> (cron that reacts to inode changes
-instead of time) was all I needed. And yes, I&#8217;m typing this on my iPad and
-publishing it just by&#8230; actually, doing nothing but typing! Pretty cool!</p>
+<p>Turns out this is easily accomplished mixing a few tools together: iA for iPad,
+Dropbox and a simple daemon running through <code>incron</code> (cron that reacts to inode
+changes instead of time) was all I needed. And yes, I&#8217;m typing this on my iPad
+and publishing it just by&#8230; actually, doing nothing but typing!</p>
+
+<p>Pretty cool!</p>
 ]]></content>
   </entry>
   
