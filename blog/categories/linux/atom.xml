@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | heelhook]]></title>
   <link href="http://heelhook.github.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2013-01-29T19:07:27-03:00</updated>
+  <updated>2013-02-18T20:17:53-05:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Compare permissions script]]></title>
     <link href="http://heelhook.github.com/blog/2011/03/15/compare-permissions-script/"/>
-    <updated>2011-03-15T23:15:00-03:00</updated>
+    <updated>2011-03-15T23:15:00-04:00</updated>
     <id>http://heelhook.github.com/blog/2011/03/15/compare-permissions-script</id>
     <content type="html"><![CDATA[<p>Recently I needed to compare some permissions between two directories, I wrote this script that could be useful for someone else:</p>
 
@@ -156,7 +156,7 @@ popd >/dev/null</p>
   <entry>
     <title type="html"><![CDATA[A brave new Media Center revisited]]></title>
     <link href="http://heelhook.github.com/blog/2010/03/06/a-brave-new-media-center-revisited/"/>
-    <updated>2010-03-06T23:49:00-03:00</updated>
+    <updated>2010-03-06T23:49:00-05:00</updated>
     <id>http://heelhook.github.com/blog/2010/03/06/a-brave-new-media-center-revisited</id>
     <content type="html"><![CDATA[<p>I recently wrote a post about my new media center, running off my laptop, well, while that setup was sweet and all, there was some sort of hole in it, that is, my laptop went belly up…</p>
 

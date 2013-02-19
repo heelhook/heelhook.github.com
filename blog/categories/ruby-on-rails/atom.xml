@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby on rails | heelhook]]></title>
   <link href="http://heelhook.github.com/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2013-01-29T19:07:27-03:00</updated>
+  <updated>2013-02-18T20:17:53-05:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[acts_as_authentic nightmare]]></title>
     <link href="http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/"/>
-    <updated>2010-06-23T23:10:00-03:00</updated>
+    <updated>2010-06-23T23:10:00-04:00</updated>
     <id>http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare</id>
     <content type="html"><![CDATA[<p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
 

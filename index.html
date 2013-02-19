@@ -9,8 +9,7 @@
   <meta name="author" content="Pablo Fernandez">
 
   
-  <meta name="description" content="iPad Blogging on the Go Dec 28th, 2012 And in preparations for my trip I decided to look into what possibilities I had
-for some light, offline- &hellip;">
+  <meta name="description" content="Challenges of Maintaing a Rapidly Evolving Code Base Feb 18th, 2013 For the past year, I have been working as cofounder at SkillHound working &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -117,6 +116,93 @@ for some light, offline- &hellip;">
     
       <h2 class="entry-title">
         
+        <a href="/blog/2013/02/18/challenges-of-maintaing-a-rapidly-evolving-code-base/">Challenges of Maintaing a Rapidly Evolving Code Base</a>
+        
+      </h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-18T19:39:00-05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
+
+<p>My cofounder and myself are both (who isn&#8217;t these days among the HN crowd?) Steve Blank&#8217;s method practitioners wannabes. We couldn&#8217;t wait to get our feet wet going through the Startup Owner&#8217;s Manual&#8217;s table of contents with our very own concept.</p>
+
+<p>Derek is not a developer, although he is good at screwing up the indention of my HAML files haha — jk derek! As the only developer in the team, I&#8217;m the sole responsible for the codebase&#8217;s sanity (and my own).</p>
+
+<p>I&#8217;ve managed several codebases before (as pretty much every other developer out there). Coming from CVS and SVN, I learned to love and accept Git&#8217;s amazing power and minor-ux annoyances (let&#8217;s not start a flamewar here).</p>
+
+<p>The experience with this startup&#8217;s codebase has been different. Very, very different. Following the Customer Discovery method, we implemented a barebones prototype of our product, not quite a full blown MVP but a <em>Minimal Viable Demo</em>. And all was good. We would go to what we thought might be our prospective customer, talked to them for 45 minutes, demoed for 5 minutes, and talked for another 10 minutes.</p>
+
+<p>This was an extremely useful process, every single time we would finish a call or a meeting we would have ideas of what to change or what the product was. Over the course of just two or three months we had changed our target industry, shifted the target user two or three times and created what seemed (and was, for all intents and purposes) an entirely new product about 10 times. You could say that the only thing that didn&#8217;t change was name, and you would be wrong, because we changed that too after some time.</p>
+
+<p>Throughout the first stage of this startup, as with most if not all startups, the priority was (as it should be) finding a market and a pain point that can be addresses within that market, then identifying what the MVP that addresses that pain point should look like. Code base stability, proper engineering and maintainability come at a distant third or fourth in the list of priorities.</p>
+
+<p>Particularly in the first few months we had very drastic shifts, and each week the product would change significantly. In hindsight, perhaps a new code base would be in order on every micro pivot, leaving behind a library of common modules that were being used, but this was hard, as hardly a single method would remain unaffected. But that&#8217;s not what happened. No. As we shifted from one market to the other, from user to user, I would slowly adapt existent code in the name of speed, I would reuse code that was intended for A to be used for A&#8217;, only to realize two days later that A&#8217; was not in our best interest, but might work well to address A&#8221;.</p>
+
+<p>Over time, the codebase became chaotic, with entires modules of the architecture that remained from previous iterations, much like our arrector pili, just a vestigial trait of a predecessor to the current being.</p>
+
+<h2>Defaulting on technical debt — AKA &#8220;F*ck it, lets rewrite this bitch&#8221;</h2>
+
+<p>Most of us, at one point or another, flirt with the idea of refactoring an entire or significant part of a codebase. Oh, the magic wand that will fix all problems in that tired codebase we inherited (from someone else or from ourselves).</p>
+
+<p>As you flirt more and more with the idea it becomes ever more compelling, the mere fact of thinking about adding a new feature to the polluted codebase hurts when you compare it to the inherit beauty and simplicityof a naked canvas. As the idea starts taking shape of how you would do it right this time, how if you only had the time all problems would be fixed. This time it&#8217;ll be different. You are a different person, you know more about the product, about the technology, about the market.</p>
+
+<p>And yes, in all likelyhood the product will be different. But that doesn&#8217;t mean that in five months or a year you won&#8217;t be in a similar situation, again, reaching for the blank canvas.</p>
+
+<p>The reality is, rewriting a codebase is, almost always a receipe for disaster, unless your product belongs to that theoretical 1% of niches where speed, market landscape and needs don&#8217;t rapidly change, rewriting will create a significant advantage to your competitors.</p>
+
+<h2><code>git init .</code></h2>
+
+<p>I admit it I gave away to the temptation. After a couple of days of entertaining the idea of a complete rewrite, even after being burned many many years ago with one that ultimately destroyed my email client for Gnome project. I realized I was being lured in into Fuckville. 180-U-turn. Now.</p>
+
+<p>Instead, I created a branch where I would start deleting code like there was no tomorrow. No. It wasn&#8217;t a rewrite, it was the ultimate axing of obsolete code. A good way to start a refactor effort that will accompany a healthy codebase throughout its lifetime.</p>
+
+<h2>Lessons</h2>
+
+<p>What am I doing now that minimizes the problems related to the fast pace of a code base? What did I change from the start?</p>
+
+<p>The lessons I&#8217;ve drawn from this experience have been mostly related to observe what I did and largely repeat the same behavior but with more determination. Its largely the lesson I drew from <a href="http://www.amazon.com/The-Art-Racing-Rain-Novel/dp/0061537969"><em>The Art of Racing in the Rain</em></a>: <em>when you anticipate chaos, don&#8217;t try to control it, rather, factor it in and accept it</em>.</p>
+
+<p>What I mean by that is, when dealing with a codebase that deals with an unknown and ambiguous problem, don&#8217;t try to tame the instability and chaotic nature of the codebase, rather accept it and visualize how you&#8217;ll get back the control of the steering wheel when time comes. Don&#8217;t try to regain control to early or to late or you&#8217;ll lose control altogether.</p>
+
+  
+  
+
+<div class="sharing-box">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  
+  
+  
+</div>
+
+    </article>
+  
+  
+    <article class="post">
+      
+  <header>
+    
+      <h2 class="entry-title">
+        
         <a href="/blog/2012/12/28/iPad-blogging-on-the-go/">iPad Blogging on the Go</a>
         
       </h2>
@@ -135,7 +221,7 @@ for some light, offline- &hellip;">
   
 
 
-<time datetime="2012-12-28T05:02:00-03:00" pubdate data-updated="true">Dec 28<span>th</span>, 2012</time>
+<time datetime="2012-12-28T05:02:00-05:00" pubdate data-updated="true">Dec 28<span>th</span>, 2012</time>
         
       </p>
     
@@ -190,7 +276,7 @@ and publishing it just by&#8230; actually, doing nothing but typing!</p>
   
 
 
-<time datetime="2012-12-27T23:15:00-03:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
+<time datetime="2012-12-27T23:15:00-05:00" pubdate data-updated="true">Dec 27<span>th</span>, 2012</time>
         
       </p>
     
@@ -245,7 +331,7 @@ January 19th.</p>
   
 
 
-<time datetime="2012-12-18T00:36:00-03:00" pubdate data-updated="true">Dec 18<span>th</span>, 2012</time>
+<time datetime="2012-12-18T00:36:00-05:00" pubdate data-updated="true">Dec 18<span>th</span>, 2012</time>
         
       </p>
     
@@ -323,7 +409,7 @@ work human powered and personal.</p></blockquote>
   
 
 
-<time datetime="2011-03-15T23:15:00-03:00" pubdate data-updated="true">Mar 15<span>th</span>, 2011</time>
+<time datetime="2011-03-15T23:15:00-04:00" pubdate data-updated="true">Mar 15<span>th</span>, 2011</time>
         
       </p>
     
@@ -422,7 +508,7 @@ work human powered and personal.</p></blockquote>
   
 
 
-<time datetime="2010-06-23T23:10:00-03:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2010</time>
+<time datetime="2010-06-23T23:10:00-04:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2010</time>
         
       </p>
     
@@ -498,7 +584,7 @@ work human powered and personal.</p></blockquote>
   
 
 
-<time datetime="2010-05-11T23:19:00-03:00" pubdate data-updated="true">May 11<span>th</span>, 2010</time>
+<time datetime="2010-05-11T23:19:00-04:00" pubdate data-updated="true">May 11<span>th</span>, 2010</time>
         
       </p>
     
@@ -561,7 +647,7 @@ work human powered and personal.</p></blockquote>
   
 
 
-<time datetime="2010-03-06T23:49:00-03:00" pubdate data-updated="true">Mar 6<span>th</span>, 2010</time>
+<time datetime="2010-03-06T23:49:00-05:00" pubdate data-updated="true">Mar 6<span>th</span>, 2010</time>
         
       </p>
     
@@ -684,7 +770,7 @@ work human powered and personal.</p></blockquote>
   
 
 
-<time datetime="2010-02-25T23:26:00-03:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
+<time datetime="2010-02-25T23:26:00-05:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
         
       </p>
     
@@ -741,7 +827,7 @@ work human powered and personal.</p></blockquote>
   
 
 
-<time datetime="2010-02-23T23:08:00-03:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2010</time>
+<time datetime="2010-02-23T23:08:00-05:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2010</time>
         
       </p>
     
@@ -775,59 +861,12 @@ work human powered and personal.</p></blockquote>
 
     </article>
   
-  
-    <article class="post">
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2010/02/20/the-value-of-selfishness/">The Value of Selfishness</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-02-20T23:11:00-03:00" pubdate data-updated="true">Feb 20<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>I have recently had the opportunity to help out a friend who is launching her own company. This is the first time I have informally gave advice to a fellow entrepreneur and I have found it to be a very rich experience, where a lot of value is easily created, strengthening the “core friendship” in the process.</p>
-
-<p>From a purely selfish point of view I have been enjoying myself, opening up to a new industry I haven’t gave too much thought ever before, and sharing ideas on the go. I have seen this before, but being the reminded of the richness of bouncing ideas off someones head and seeing what comes back at you is always a good and enjoyable thing.</p>
-
-<p>Needless to say, I wish her the best of lucks in her new endeavor! Best of lucks, Lucila!</p>
-
-  
-  
-
-<div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-    </article>
-  
 
     <nav role="navigation" id="pagination">
+  <span class="next">
+    <a href="/blog/page/2/" rel="next">Continue &rarr;</a>
+  </span>
+
 
 </nav>
   </section>
