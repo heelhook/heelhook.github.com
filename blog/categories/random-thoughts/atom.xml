@@ -4,7 +4,7 @@
   <title><![CDATA[Category: random thoughts | heelhook]]></title>
   <link href="http://heelhook.github.com/blog/categories/random-thoughts/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:21:10-05:00</updated>
+  <updated>2013-02-18T20:22:30-05:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -59,6 +59,8 @@
 <p>The lessons I've drawn from this experience have been mostly related to observe what I did and largely repeat the same behavior but with more determination. Its largely the lesson I drew from <a href="http://www.amazon.com/The-Art-Racing-Rain-Novel/dp/0061537969"><em>The Art of Racing in the Rain</em></a>: <em>when you anticipate chaos, don't try to control it, rather, factor it in and accept it</em>.</p>
 
 <p>What I mean by that is, when dealing with a codebase that deals with an unknown and ambiguous problem, don't try to tame the instability and chaotic nature of the codebase, rather accept it and visualize how you'll get back the control of the steering wheel when time comes. Don't try to regain control to early or to late or you'll lose control altogether.</p>
+
+<p>How do you deal with maintaining a codebase that drastically changes on a weekly basis? How about when the codebase starts to stabilize?</p>
 ]]></content>
   </entry>
   
