@@ -4,7 +4,7 @@
   <title><![CDATA[Category: random thoughts | heelhook]]></title>
   <link href="http://heelhook.github.com/blog/categories/random-thoughts/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:30:01-05:00</updated>
+  <updated>2013-02-18T20:31:00-05:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -34,7 +34,7 @@
 
 <p>Particularly in the first few months we had very drastic shifts, and each week the product would change significantly. In hindsight, perhaps a new code base would be in order on every micro pivot, leaving behind a library of common modules that were being used, but this was hard, as hardly a single method would remain unaffected. But that's not what happened. No. As we shifted from one market to the other, from user to user, I would slowly adapt existent code in the name of speed, I would reuse code that was intended for A to be used for A', only to realize two days later that A' was not in our best interest, but might work well to address A''.</p>
 
-<p>Over time, the codebase became chaotic, with entires modules of the architecture that remained from previous iterations, much like our <a href="http://whyevolutionistrue.wordpress.com/2011/02/22/vestigial-trait-the-arrector-pili/">arrector pili</a>, just a vestigial trait of a predecessor to the current being.</p>
+<p>Over time, the codebase became chaotic, with entires modules of the architecture that remained from previous iterations, much like our <a href="http://whyevolutionistrue.wordpress.com/2011/02/22/vestigial-trait-the-arrector-pili/">arrector pili</a>, just a vestigial trait of a predecessor of the current being.</p>
 
 <h2>Defaulting on technical debt — AKA "F*ck it, lets rewrite this"</h2>
 
