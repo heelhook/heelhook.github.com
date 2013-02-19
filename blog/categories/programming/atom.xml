@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | heelhook]]></title>
   <link href="http://heelhook.github.com/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:22:30-05:00</updated>
+  <updated>2013-02-18T20:22:59-05:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -60,7 +60,7 @@
 
 <p>What I mean by that is, when dealing with a codebase that deals with an unknown and ambiguous problem, don't try to tame the instability and chaotic nature of the codebase, rather accept it and visualize how you'll get back the control of the steering wheel when time comes. Don't try to regain control to early or to late or you'll lose control altogether.</p>
 
-<p>How do you deal with maintaining a codebase that drastically changes on a weekly basis? How about when the codebase starts to stabilize?</p>
+<p>How do you deal with maintaining a codebase that drastically changes on a weekly basis? How about when it starts to stabilize?</p>
 ]]></content>
   </entry>
   
