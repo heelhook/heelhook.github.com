@@ -4,7 +4,7 @@
   <title><![CDATA[heelhook]]></title>
   <link href="http://heelhook.github.com/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:17:53-05:00</updated>
+  <updated>2013-02-18T20:19:16-05:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -14,10 +14,10 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Challenges of maintaing a rapidly evolving code base]]></title>
-    <link href="http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaing-a-rapidly-evolving-code-base/"/>
+    <title type="html"><![CDATA[Challenges of maintaining a rapidly changing code base]]></title>
+    <link href="http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
     <updated>2013-02-18T19:39:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaing-a-rapidly-evolving-code-base</id>
+    <id>http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
     <content type="html"><![CDATA[<p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
 
 <p>My cofounder and myself are both (who isn&#8217;t these days among the HN crowd?) Steve Blank&#8217;s method practitioners wannabes. We couldn&#8217;t wait to get our feet wet going through the Startup Owner&#8217;s Manual&#8217;s table of contents with our very own concept.</p>
