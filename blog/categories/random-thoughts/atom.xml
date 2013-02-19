@@ -4,7 +4,7 @@
   <title><![CDATA[Category: random thoughts | heelhook]]></title>
   <link href="http://heelhook.github.com/blog/categories/random-thoughts/atom.xml" rel="self"/>
   <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:27:00-05:00</updated>
+  <updated>2013-02-18T20:29:15-05:00</updated>
   <id>http://heelhook.github.com/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -52,7 +52,7 @@
 
 <p>Instead, I created a branch where I would start deleting code like there was no tomorrow. No. It wasn't a rewrite, it was the ultimate axing of obsolete code. A good way to start a refactor effort that will accompany a healthy codebase throughout its lifetime.</p>
 
-<h2>Lessons</h2>
+<h2>Lesson</h2>
 
 <p>What am I doing now that minimizes the problems related to the fast pace of a code base? What did I change from the start?</p>
 
