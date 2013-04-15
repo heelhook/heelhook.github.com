@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: value | heelhook]]></title>
-  <link href="http://heelhook.github.com/blog/categories/value/atom.xml" rel="self"/>
-  <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:31:00-05:00</updated>
-  <id>http://heelhook.github.com/</id>
+  <link href="http://heelhook.github.io/blog/categories/value/atom.xml" rel="self"/>
+  <link href="http://heelhook.github.io/"/>
+  <updated>2013-04-15T11:26:38-04:00</updated>
+  <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The value of *selective* listening]]></title>
-    <link href="http://heelhook.github.com/blog/2010/02/25/the-value-of-star-selectively-star-listening/"/>
+    <link href="http://heelhook.github.io/blog/2010/02/25/the-value-of-star-selectively-star-listening/"/>
     <updated>2010-02-25T23:26:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/02/25/the-value-of-star-selectively-star-listening</id>
+    <id>http://heelhook.github.io/blog/2010/02/25/the-value-of-star-selectively-star-listening</id>
     <content type="html"><![CDATA[<p>I have recently come across this eye opening post. I mean, it probably was eye opening back when it was written in 1995, heck, I bet most Newsweek readers back then yelled something like “I knew it, that Internet thing is bullcrap!”.</p>
 
 <p>This article, astonishingly titled <a href="http://threewordchant.com/2010/02/24/why-the-internet-will-fail-from-1995/">Why the internet will fail</a>, runs down through the many reasons why Internet would be something we would all get over soon really quickly, like we did with Tamagotchis (thankfully).</p>
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[The value of idle time]]></title>
-    <link href="http://heelhook.github.com/blog/2010/02/23/the-value-of-idle-time/"/>
+    <link href="http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time/"/>
     <updated>2010-02-23T23:08:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/02/23/the-value-of-idle-time</id>
+    <id>http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time</id>
     <content type="html"><![CDATA[<p>I have recently read a quote attributed to Einstein, it reads something along the lines of “the best ideas I have I have them while I shave”. This got me thinking, how much idle time do I have on any given month?</p>
 
 <p>I am an Internet junky, and completely obsessed with efficiency, so I may not be a good statistical sample, but bear with me on this one.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: programming | heelhook]]></title>
-  <link href="http://heelhook.github.com/blog/categories/programming/atom.xml" rel="self"/>
-  <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:31:00-05:00</updated>
-  <id>http://heelhook.github.com/</id>
+  <link href="http://heelhook.github.io/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://heelhook.github.io/"/>
+  <updated>2013-04-15T11:26:38-04:00</updated>
+  <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
     
@@ -15,14 +15,17 @@
   
   <entry>
     <title type="html"><![CDATA[Challenges of maintaining a rapidly changing code base]]></title>
-    <link href="http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
+    <link href="http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
     <updated>2013-02-18T19:39:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
+    <id>http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
     <content type="html"><![CDATA[<p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
 
 <p>My cofounder and myself are both (who isn't these days among the HN crowd?) Steve Blank's method practitioners wannabes. We couldn't wait to get our feet wet going through the Startup Owner's Manual's table of contents with our very own concept.</p>
 
 <p>Derek is not a developer, although he is good at screwing up the indention of my HAML files haha — jk derek! As the only developer in the team, I'm the sole responsible for the codebase's sanity (and my own).</p>
+
+<!-- more -->
+
 
 <p>I've managed several codebases before (as pretty much every other developer out there). Coming from CVS and SVN, I learned to love and accept Git's amazing power and minor-ux annoyances (let's not start a flamewar here).</p>
 
@@ -66,9 +69,9 @@
   
   <entry>
     <title type="html"><![CDATA[Compare permissions script]]></title>
-    <link href="http://heelhook.github.com/blog/2011/03/15/compare-permissions-script/"/>
+    <link href="http://heelhook.github.io/blog/2011/03/15/compare-permissions-script/"/>
     <updated>2011-03-15T23:15:00-04:00</updated>
-    <id>http://heelhook.github.com/blog/2011/03/15/compare-permissions-script</id>
+    <id>http://heelhook.github.io/blog/2011/03/15/compare-permissions-script</id>
     <content type="html"><![CDATA[<p>Recently I needed to compare some permissions between two directories, I wrote this script that could be useful for someone else:</p>
 
 <p>``` bash</p>
@@ -206,9 +209,9 @@ popd >/dev/null</p>
   
   <entry>
     <title type="html"><![CDATA[acts_as_authentic nightmare]]></title>
-    <link href="http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/"/>
+    <link href="http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare/"/>
     <updated>2010-06-23T23:10:00-04:00</updated>
-    <id>http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare</id>
+    <id>http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare</id>
     <content type="html"><![CDATA[<p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
 
 <p>Half an hour later I was pretty much ready to do some open heart surgery on authlogic, man is the configuration of act_as_authentic confusing! And of course, RTFMing doesn’t work, there is not a single example of how changing the default act_as_authentic configuration works!</p>

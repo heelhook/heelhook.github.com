@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: d510 | heelhook]]></title>
-  <link href="http://heelhook.github.com/blog/categories/d510/atom.xml" rel="self"/>
-  <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:31:00-05:00</updated>
-  <id>http://heelhook.github.com/</id>
+  <link href="http://heelhook.github.io/blog/categories/d510/atom.xml" rel="self"/>
+  <link href="http://heelhook.github.io/"/>
+  <updated>2013-04-15T11:26:38-04:00</updated>
+  <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[A brave new Media Center revisited]]></title>
-    <link href="http://heelhook.github.com/blog/2010/03/06/a-brave-new-media-center-revisited/"/>
+    <link href="http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited/"/>
     <updated>2010-03-06T23:49:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/03/06/a-brave-new-media-center-revisited</id>
+    <id>http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited</id>
     <content type="html"><![CDATA[<p>I recently wrote a post about my new media center, running off my laptop, well, while that setup was sweet and all, there was some sort of hole in it, that is, my laptop went belly up…</p>
 
 <p>That was quite unfortunate, but it gave me the possibility to play with some new stuff, namely ITX setups.</p>

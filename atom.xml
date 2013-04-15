@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[heelhook]]></title>
-  <link href="http://heelhook.github.com/atom.xml" rel="self"/>
-  <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:31:00-05:00</updated>
-  <id>http://heelhook.github.com/</id>
+  <link href="http://heelhook.github.io/atom.xml" rel="self"/>
+  <link href="http://heelhook.github.io/"/>
+  <updated>2013-04-15T11:26:38-04:00</updated>
+  <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
     
@@ -14,15 +14,52 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The essay is the unit]]></title>
+    <link href="http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit/"/>
+    <updated>2013-04-15T11:18:00-04:00</updated>
+    <id>http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit</id>
+    <content type="html"><![CDATA[<p>While I was reading <a href="https://medium.com/life-hacks/80f8d525b0d8">“The distraction-free iPhone (or ‘Why I’m happier since I
+disabled Safari’)”</a> I noticed a bunch of icons alongside different
+paragraphs.</p>
+
+<p>Obviously, before finishing reading an article about short time span and
+productivity (how many productivity articles have been written in the past
+couple months?!), I had to know what those icons were.</p>
+
+<p>As I suspected, they were discussions that medium.com allows to have on each
+single paragraph.</p>
+
+<!-- more -->
+
+
+<p>I believe this is wrong.</p>
+
+<p>The smallest unit of an essay is not a paragraph, a sentence, or a word. Its the
+essay. Motivating and promoting people to dissect and discuss bits and fragments
+of an essay is a recipe for misunderstandings and half-baked thoughts. I
+understand the motivation, but I believe it sets up the stage to have the wrong
+kind of discussions.</p>
+
+<p>FWIW, the article itself, <a href="https://medium.com/life-hacks/80f8d525b0d8">“The distraction-free iPhone (or ‘Why I’m happier
+since I disabled Safari’)”</a>, is good and a worthwhile experiment. Not an
+insightful comment, but hey, I’d rather try the experiment <a href="https://medium.com/@jakek">Jake</a> proposes
+before commenting on it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Challenges of maintaining a rapidly changing code base]]></title>
-    <link href="http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
+    <link href="http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
     <updated>2013-02-18T19:39:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
+    <id>http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
     <content type="html"><![CDATA[<p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
 
 <p>My cofounder and myself are both (who isn&#8217;t these days among the HN crowd?) Steve Blank&#8217;s method practitioners wannabes. We couldn&#8217;t wait to get our feet wet going through the Startup Owner&#8217;s Manual&#8217;s table of contents with our very own concept.</p>
 
 <p>Derek is not a developer, although he is good at screwing up the indention of my HAML files haha — jk derek! As the only developer in the team, I&#8217;m the sole responsible for the codebase&#8217;s sanity (and my own).</p>
+
+<!-- more -->
+
 
 <p>I&#8217;ve managed several codebases before (as pretty much every other developer out there). Coming from CVS and SVN, I learned to love and accept Git&#8217;s amazing power and minor-ux annoyances (let&#8217;s not start a flamewar here).</p>
 
@@ -66,9 +103,9 @@
   
   <entry>
     <title type="html"><![CDATA[iPad blogging on the go]]></title>
-    <link href="http://heelhook.github.com/blog/2012/12/28/iPad-blogging-on-the-go/"/>
+    <link href="http://heelhook.github.io/blog/2012/12/28/iPad-blogging-on-the-go/"/>
     <updated>2012-12-28T05:02:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2012/12/28/iPad-blogging-on-the-go</id>
+    <id>http://heelhook.github.io/blog/2012/12/28/iPad-blogging-on-the-go</id>
     <content type="html"><![CDATA[<p>And in preparations for my trip I decided to look into what possibilities I had
 for some light, offline-friendly blogging on my Jekyll blog.</p>
 
@@ -83,9 +120,9 @@ and publishing it just by&#8230; actually, doing nothing but typing!</p>
   
   <entry>
     <title type="html"><![CDATA[psyched!]]></title>
-    <link href="http://heelhook.github.com/blog/2012/12/27/psyched/"/>
+    <link href="http://heelhook.github.io/blog/2012/12/27/psyched/"/>
     <updated>2012-12-27T23:15:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2012/12/27/psyched</id>
+    <id>http://heelhook.github.io/blog/2012/12/27/psyched</id>
     <content type="html"><![CDATA[<p>I&#8217;m psyched, I&#8217;m now T minus ~20 hours away from the start of my journey around
 Southern Africa, loading my physical backpack and unloading my mental one.</p>
 
@@ -100,9 +137,9 @@ January 19th.</p>
   
   <entry>
     <title type="html"><![CDATA[Company Smells]]></title>
-    <link href="http://heelhook.github.com/blog/2012/12/18/company-smells/"/>
+    <link href="http://heelhook.github.io/blog/2012/12/18/company-smells/"/>
     <updated>2012-12-18T00:36:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2012/12/18/company-smells</id>
+    <id>http://heelhook.github.io/blog/2012/12/18/company-smells</id>
     <content type="html"><![CDATA[<p>Most developers won&#8217;t need a reminder of what a &#8220;* Smell&#8221; refers to, but I&#8217;ll
 assume that the companies that fit the description of this post won&#8217;t
 (incidentally, those companies probably wouldn&#8217;t read this blog post either). A
@@ -162,16 +199,35 @@ they get their hands on, is a very powerful company smell: they don&#8217;t care
 the practices of people they work with, and they&#8217;ll likely won&#8217;t care about the
 type of developers they find.</p>
 
-<p>No, I&#8217;m not replying to your (absolutely decontextualized) email.
+<p>No, I&#8217;m not replying to your (absolutely decontextualized) email, Angelina.
 Sorry.</p>
 ]]></content>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Intro]]></title>
+    <link href="http://heelhook.github.io/blog/2012/07/22/intro/"/>
+    <updated>2012-07-22T08:23:00-04:00</updated>
+    <id>http://heelhook.github.io/blog/2012/07/22/intro</id>
+    <content type="html"><![CDATA[<p>Testing!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, massa eu vestibulum laoreet, nibh ante vulputate lorem, ac lobortis ante tellus eu mi. Duis sem nisi, luctus at feugiat eget, fringilla ut tellus. Nam a molestie justo. Sed pulvinar est vitae tellus semper tincidunt. Fusce euismod luctus lacus nec placerat. Mauris rutrum scelerisque nulla ut tempor. Nunc porttitor posuere mi, aliquet vehicula lorem feugiat in. Ut ut fermentum risus. Aliquam tincidunt ultricies ante sit amet bibendum. Cras nec sapien odio. Duis posuere congue sem, at congue massa faucibus at.</p>
+
+<p>Integer ut sapien eget nisl auctor faucibus ut fermentum arcu. Nunc rutrum urna non risus congue et tristique felis eleifend. Maecenas blandit est eu mauris aliquam aliquet. Quisque porttitor enim eget risus blandit in mollis orci eleifend. Nam malesuada nulla sed lacus elementum placerat accumsan arcu rhoncus. Phasellus feugiat cursus turpis nec facilisis. Duis eget metus arcu, eget commodo velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer cursus vulputate enim, vel gravida velit faucibus et. Ut a urna vitae tellus cursus rhoncus. Maecenas at odio eget quam cursus elementum. Aliquam vitae eros quis tellus laoreet accumsan sed id lorem. Suspendisse et rutrum leo. Integer scelerisque vestibulum adipiscing. In posuere, libero ac accumsan suscipit, nulla ligula gravida erat, ut tempor odio erat nec sem. Quisque justo ipsum, adipiscing volutpat varius vitae, blandit eget nisi.</p>
+
+<p>Nullam adipiscing neque ac lacus commodo vitae imperdiet dui sollicitudin. Ut ac nunc augue. Nam at sem ut quam commodo aliquet vitae vitae dui. Vivamus scelerisque felis eget dolor cursus feugiat. Phasellus at dui sed lectus scelerisque pretium. Etiam nec massa ut justo vestibulum fringilla ac vitae urna. Morbi tortor erat, tempus sed consectetur at, elementum nec eros. Vivamus mattis arcu a sapien semper non lacinia eros pretium.</p>
+
+<p>Proin ut hendrerit arcu. Maecenas ullamcorper tristique magna vel mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tincidunt euismod viverra. In sit amet neque turpis. Suspendisse ac sapien mi, id blandit purus. Ut tortor turpis, rutrum ac tempor at, accumsan sit amet erat. Etiam ultricies eleifend dolor, eget tempus justo tristique vitae. In hac habitasse platea dictumst. Aliquam eu enim neque.</p>
+
+<p>Morbi massa lorem, viverra non dictum at, malesuada vel nibh. Nam fermentum lobortis varius. Sed a nulla lacus, quis posuere risus. Nunc id urna libero, quis rutrum mi. In gravida felis urna. Praesent nec dolor ac urna tempor fermentum. Curabitur rutrum arcu et lorem volutpat viverra.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Compare permissions script]]></title>
-    <link href="http://heelhook.github.com/blog/2011/03/15/compare-permissions-script/"/>
+    <link href="http://heelhook.github.io/blog/2011/03/15/compare-permissions-script/"/>
     <updated>2011-03-15T23:15:00-04:00</updated>
-    <id>http://heelhook.github.com/blog/2011/03/15/compare-permissions-script</id>
+    <id>http://heelhook.github.io/blog/2011/03/15/compare-permissions-script</id>
     <content type="html"><![CDATA[<p>Recently I needed to compare some permissions between two directories, I wrote this script that could be useful for someone else:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -389,9 +445,9 @@ Sorry.</p>
   
   <entry>
     <title type="html"><![CDATA[acts_as_authentic nightmare]]></title>
-    <link href="http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/"/>
+    <link href="http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare/"/>
     <updated>2010-06-23T23:10:00-04:00</updated>
-    <id>http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare</id>
+    <id>http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare</id>
     <content type="html"><![CDATA[<p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
 
 <p>Half an hour later I was pretty much ready to do some open heart surgery on authlogic, man is the configuration of act_as_authentic confusing! And of course, RTFMing doesn’t work, there is not a single example of how changing the default act_as_authentic configuration works!</p>
@@ -427,9 +483,9 @@ Sorry.</p>
   
   <entry>
     <title type="html"><![CDATA[XBMC issues with smb]]></title>
-    <link href="http://heelhook.github.com/blog/2010/05/11/xbmc-issues-with-smb/"/>
+    <link href="http://heelhook.github.io/blog/2010/05/11/xbmc-issues-with-smb/"/>
     <updated>2010-05-11T23:19:00-04:00</updated>
-    <id>http://heelhook.github.com/blog/2010/05/11/xbmc-issues-with-smb</id>
+    <id>http://heelhook.github.io/blog/2010/05/11/xbmc-issues-with-smb</id>
     <content type="html"><![CDATA[<p>I’ve been having issues with XBMC playing files served through samba, I don’t recall when this started, but for sometime I couldn’t even browse the collection of files in my own server. Nothing changed, well, I did upgrade Ubuntu to 10.04 on my server, but I think this was happening before that.</p>
 
 <p>Anyway, I browsed the internet and didn’t find anything related to this error or how to fix it.</p>
@@ -452,9 +508,9 @@ Sorry.</p>
   
   <entry>
     <title type="html"><![CDATA[A brave new Media Center revisited]]></title>
-    <link href="http://heelhook.github.com/blog/2010/03/06/a-brave-new-media-center-revisited/"/>
+    <link href="http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited/"/>
     <updated>2010-03-06T23:49:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/03/06/a-brave-new-media-center-revisited</id>
+    <id>http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited</id>
     <content type="html"><![CDATA[<p>I recently wrote a post about my new media center, running off my laptop, well, while that setup was sweet and all, there was some sort of hole in it, that is, my laptop went belly up…</p>
 
 <p>That was quite unfortunate, but it gave me the possibility to play with some new stuff, namely ITX setups.</p>
@@ -537,9 +593,9 @@ Sorry.</p>
   
   <entry>
     <title type="html"><![CDATA[The value of *selective* listening]]></title>
-    <link href="http://heelhook.github.com/blog/2010/02/25/the-value-of-star-selectively-star-listening/"/>
+    <link href="http://heelhook.github.io/blog/2010/02/25/the-value-of-star-selectively-star-listening/"/>
     <updated>2010-02-25T23:26:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/02/25/the-value-of-star-selectively-star-listening</id>
+    <id>http://heelhook.github.io/blog/2010/02/25/the-value-of-star-selectively-star-listening</id>
     <content type="html"><![CDATA[<p>I have recently come across this eye opening post. I mean, it probably was eye opening back when it was written in 1995, heck, I bet most Newsweek readers back then yelled something like “I knew it, that Internet thing is bullcrap!”.</p>
 
 <p>This article, astonishingly titled <a href="http://threewordchant.com/2010/02/24/why-the-internet-will-fail-from-1995/">Why the internet will fail</a>, runs down through the many reasons why Internet would be something we would all get over soon really quickly, like we did with Tamagotchis (thankfully).</p>
@@ -556,9 +612,9 @@ Sorry.</p>
   
   <entry>
     <title type="html"><![CDATA[The value of idle time]]></title>
-    <link href="http://heelhook.github.com/blog/2010/02/23/the-value-of-idle-time/"/>
+    <link href="http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time/"/>
     <updated>2010-02-23T23:08:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/02/23/the-value-of-idle-time</id>
+    <id>http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time</id>
     <content type="html"><![CDATA[<p>I have recently read a quote attributed to Einstein, it reads something along the lines of “the best ideas I have I have them while I shave”. This got me thinking, how much idle time do I have on any given month?</p>
 
 <p>I am an Internet junky, and completely obsessed with efficiency, so I may not be a good statistical sample, but bear with me on this one.</p>
@@ -577,9 +633,9 @@ Sorry.</p>
   
   <entry>
     <title type="html"><![CDATA[The value of selfishness]]></title>
-    <link href="http://heelhook.github.com/blog/2010/02/20/the-value-of-selfishness/"/>
+    <link href="http://heelhook.github.io/blog/2010/02/20/the-value-of-selfishness/"/>
     <updated>2010-02-20T23:11:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/02/20/the-value-of-selfishness</id>
+    <id>http://heelhook.github.io/blog/2010/02/20/the-value-of-selfishness</id>
     <content type="html"><![CDATA[<p>I have recently had the opportunity to help out a friend who is launching her own company. This is the first time I have informally gave advice to a fellow entrepreneur and I have found it to be a very rich experience, where a lot of value is easily created, strengthening the “core friendship” in the process.</p>
 
 <p>From a purely selfish point of view I have been enjoying myself, opening up to a new industry I haven’t gave too much thought ever before, and sharing ideas on the go. I have seen this before, but being the reminded of the richness of bouncing ideas off someones head and seeing what comes back at you is always a good and enjoyable thing.</p>

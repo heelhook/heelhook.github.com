@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby on rails | heelhook]]></title>
-  <link href="http://heelhook.github.com/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
-  <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:31:00-05:00</updated>
-  <id>http://heelhook.github.com/</id>
+  <link href="http://heelhook.github.io/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
+  <link href="http://heelhook.github.io/"/>
+  <updated>2013-04-15T11:26:38-04:00</updated>
+  <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[acts_as_authentic nightmare]]></title>
-    <link href="http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare/"/>
+    <link href="http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare/"/>
     <updated>2010-06-23T23:10:00-04:00</updated>
-    <id>http://heelhook.github.com/blog/2010/06/23/acts-as-authentic-nightmare</id>
+    <id>http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare</id>
     <content type="html"><![CDATA[<p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
 
 <p>Half an hour later I was pretty much ready to do some open heart surgery on authlogic, man is the configuration of act_as_authentic confusing! And of course, RTFMing doesn’t work, there is not a single example of how changing the default act_as_authentic configuration works!</p>

@@ -9,7 +9,8 @@
   <meta name="author" content="Pablo Fernandez">
 
   
-  <meta name="description" content="Challenges of Maintaining a Rapidly Changing Code Base Feb 18th, 2013 For the past year, I have been working as cofounder at SkillHound working &hellip;">
+  <meta name="description" content="The Essay Is the Unit Apr 15th, 2013 While I was reading “The distraction-free iPhone (or ‘Why I’m happier since I
+disabled Safari’)” I noticed a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://heelhook.github.com/">
+  <link rel="canonical" href="http://heelhook.github.io/">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -89,25 +90,75 @@
   <li><a href="http://skillhound.com">@skillhound</a></li>
   <li><a href="http://heelhook.github.com/frisky">@frisky</a></li>
   <li><a href="http://heelhook.github.com/class-proxy">@class proxy</a></li>
+  <li><a href="http://heelhook.github.com/chardin.js">@chardin.js</a></li>
 </ul>
 
 
 
-<!-- Octopress Love -->
-<aside id="octopress_linkback">
-  <a href="http://octopress.org/">
-    <span class="unicode_square">
-      <span class="unicode_circle">
-        &nbsp;
-      </span>
-    </span>
-    <span class="octopress">Powered by Octopress</span>
-  </a>
-</aside>
-
   </header>
   <section id="main">
       
+  
+  
+    <article class="post">
+      
+  <header>
+    
+      <h2 class="entry-title">
+        
+        <a href="/blog/2013/04/15/the-essay-is-the-unit/">The Essay Is the Unit</a>
+        
+      </h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-15T11:18:00-04:00" pubdate data-updated="true">Apr 15<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <p>While I was reading <a href="https://medium.com/life-hacks/80f8d525b0d8">“The distraction-free iPhone (or ‘Why I’m happier since I
+disabled Safari’)”</a> I noticed a bunch of icons alongside different
+paragraphs.</p>
+
+<p>Obviously, before finishing reading an article about short time span and
+productivity (how many productivity articles have been written in the past
+couple months?!), I had to know what those icons were.</p>
+
+<p>As I suspected, they were discussions that medium.com allows to have on each
+single paragraph.</p>
+
+
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/04/15/the-essay-is-the-unit/">Read on &rarr;</a>
+    </footer>
+  
+
+<div class="sharing-box">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
+  
+  
+  
+</div>
+
+    </article>
   
   
     <article class="post">
@@ -147,50 +198,17 @@
 
 <p>Derek is not a developer, although he is good at screwing up the indention of my HAML files haha — jk derek! As the only developer in the team, I&#8217;m the sole responsible for the codebase&#8217;s sanity (and my own).</p>
 
-<p>I&#8217;ve managed several codebases before (as pretty much every other developer out there). Coming from CVS and SVN, I learned to love and accept Git&#8217;s amazing power and minor-ux annoyances (let&#8217;s not start a flamewar here).</p>
-
-<p>The experience with this startup&#8217;s codebase has been different. Very, very different. Following the Customer Discovery method, we implemented a barebones prototype of our product, not quite a full blown MVP but a <em>Minimal Viable Demo</em>. And all was good. We would go to what we thought might be our prospective customer, talked to them for 45 minutes, demoed for 5 minutes, and talked for another 10 minutes.</p>
-
-<p>This was an extremely useful process, every single time we would finish a call or a meeting we would have ideas of what to change or what the product was. Over the course of just two or three months we had changed our target industry, shifted the target user two or three times and created what seemed (and was, for all intents and purposes) an entirely new product about 10 times. You could say that the only thing that didn&#8217;t change was name, and you would be wrong, because we changed that too after some time.</p>
-
-<p>Throughout the first stage of this startup, as with most if not all startups, the priority was (as it should be) finding a market and a pain point that can be addresses within that market, then identifying what the MVP that addresses that pain point should look like. Code base stability, proper engineering and maintainability come at a distant third or fourth in the list of priorities.</p>
-
-<p>Particularly in the first few months we had very drastic shifts, and each week the product would change significantly. In hindsight, perhaps a new code base would be in order on every micro pivot, leaving behind a library of common modules that were being used, but this was hard, as hardly a single method would remain unaffected. But that&#8217;s not what happened. No. As we shifted from one market to the other, from user to user, I would slowly adapt existent code in the name of speed, I would reuse code that was intended for A to be used for A&#8217;, only to realize two days later that A&#8217; was not in our best interest, but might work well to address A&#8221;.</p>
-
-<p>Over time, the codebase became chaotic, with entires modules of the architecture that remained from previous iterations, much like our <a href="http://whyevolutionistrue.wordpress.com/2011/02/22/vestigial-trait-the-arrector-pili/">arrector pili</a>, just a vestigial trait of a predecessor of the current being.</p>
-
-<h2>Defaulting on technical debt — AKA &#8220;F*ck it, lets rewrite this&#8221;</h2>
-
-<p>Most of us, at one point or another, flirt with the idea of refactoring an entire or significant part of a codebase. Oh, the magic wand that will fix all problems in that tired codebase we inherited (from someone else or from ourselves).</p>
-
-<p>As you flirt more and more with the idea it becomes ever more compelling, the mere fact of thinking about adding a new feature to the polluted codebase hurts when you compare it to the inherit beauty and simplicityof a naked canvas. As the idea starts taking shape of how you would do it right this time, how if you only had the time all problems would be fixed. This time it&#8217;ll be different. You are a different person, you know more about the product, about the technology, about the market.</p>
-
-<p>And yes, in all likelyhood the product will be different. But that doesn&#8217;t mean that in five months or a year you won&#8217;t be in a similar situation, again, reaching for the blank canvas.</p>
-
-<p>The reality is, rewriting a codebase is, almost always a receipe for disaster, unless your product belongs to that theoretical 1% of niches where speed, market landscape and needs don&#8217;t rapidly change, rewriting will create a significant advantage to your competitors.</p>
-
-<h2><code>git init .</code></h2>
-
-<p>I admit it I gave away to the temptation. After a couple of days of entertaining the idea of a complete rewrite, even after being burned many many years ago with one that ultimately destroyed my email client for Gnome project. I realized I was being lured in into Fuckville. 180-U-turn. Now.</p>
-
-<p>Instead, I created a branch where I would start deleting code like there was no tomorrow. No. It wasn&#8217;t a rewrite, it was the ultimate axing of obsolete code. A good way to start a refactor effort that will accompany a healthy codebase throughout its lifetime.</p>
-
-<h2>Lesson</h2>
-
-<p>What am I doing now that minimizes the problems related to the fast pace of a code base? What did I change from the start?</p>
-
-<p>The lessons I&#8217;ve drawn from this experience have been mostly related to observe what I did and largely repeat the same behavior but with more determination. Its largely the lesson I drew from <a href="http://www.amazon.com/The-Art-Racing-Rain-Novel/dp/0061537969"><em>The Art of Racing in the Rain</em></a>: <em>when you anticipate chaos, don&#8217;t try to control it, rather, factor it in and accept it</em>.</p>
-
-<p>What I mean by that is, when dealing with a codebase that deals with an unknown and ambiguous problem, don&#8217;t try to tame the instability and chaotic nature of the codebase, rather accept it and visualize how you&#8217;ll get back the control of the steering wheel when time comes. Don&#8217;t try to regain control to early or to late or you&#8217;ll lose control altogether.</p>
-
-<blockquote><p>How do you deal with your codebase that drastically changes on a weekly basis? How about when it starts to stabilize?</p></blockquote>
 
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/">Read on &rarr;</a>
+    </footer>
   
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   
@@ -245,7 +263,7 @@ and publishing it just by&#8230; actually, doing nothing but typing!</p>
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   
@@ -300,7 +318,7 @@ January 19th.</p>
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   
@@ -378,7 +396,64 @@ work human powered and personal.</p></blockquote>
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
+  
+  
+  
+</div>
+
+    </article>
+  
+  
+    <article class="post">
+      
+  <header>
+    
+      <h2 class="entry-title">
+        
+        <a href="/blog/2012/07/22/intro/">Intro</a>
+        
+      </h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-22T08:23:00-04:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <p>Testing!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, massa eu vestibulum laoreet, nibh ante vulputate lorem, ac lobortis ante tellus eu mi. Duis sem nisi, luctus at feugiat eget, fringilla ut tellus. Nam a molestie justo. Sed pulvinar est vitae tellus semper tincidunt. Fusce euismod luctus lacus nec placerat. Mauris rutrum scelerisque nulla ut tempor. Nunc porttitor posuere mi, aliquet vehicula lorem feugiat in. Ut ut fermentum risus. Aliquam tincidunt ultricies ante sit amet bibendum. Cras nec sapien odio. Duis posuere congue sem, at congue massa faucibus at.</p>
+
+<p>Integer ut sapien eget nisl auctor faucibus ut fermentum arcu. Nunc rutrum urna non risus congue et tristique felis eleifend. Maecenas blandit est eu mauris aliquam aliquet. Quisque porttitor enim eget risus blandit in mollis orci eleifend. Nam malesuada nulla sed lacus elementum placerat accumsan arcu rhoncus. Phasellus feugiat cursus turpis nec facilisis. Duis eget metus arcu, eget commodo velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer cursus vulputate enim, vel gravida velit faucibus et. Ut a urna vitae tellus cursus rhoncus. Maecenas at odio eget quam cursus elementum. Aliquam vitae eros quis tellus laoreet accumsan sed id lorem. Suspendisse et rutrum leo. Integer scelerisque vestibulum adipiscing. In posuere, libero ac accumsan suscipit, nulla ligula gravida erat, ut tempor odio erat nec sem. Quisque justo ipsum, adipiscing volutpat varius vitae, blandit eget nisi.</p>
+
+<p>Nullam adipiscing neque ac lacus commodo vitae imperdiet dui sollicitudin. Ut ac nunc augue. Nam at sem ut quam commodo aliquet vitae vitae dui. Vivamus scelerisque felis eget dolor cursus feugiat. Phasellus at dui sed lectus scelerisque pretium. Etiam nec massa ut justo vestibulum fringilla ac vitae urna. Morbi tortor erat, tempus sed consectetur at, elementum nec eros. Vivamus mattis arcu a sapien semper non lacinia eros pretium.</p>
+
+<p>Proin ut hendrerit arcu. Maecenas ullamcorper tristique magna vel mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tincidunt euismod viverra. In sit amet neque turpis. Suspendisse ac sapien mi, id blandit purus. Ut tortor turpis, rutrum ac tempor at, accumsan sit amet erat. Etiam ultricies eleifend dolor, eget tempus justo tristique vitae. In hac habitasse platea dictumst. Aliquam eu enim neque.</p>
+
+<p>Morbi massa lorem, viverra non dictum at, malesuada vel nibh. Nam fermentum lobortis varius. Sed a nulla lacus, quis posuere risus. Nunc id urna libero, quis rutrum mi. In gravida felis urna. Praesent nec dolor ac urna tempor fermentum. Curabitur rutrum arcu et lorem volutpat viverra.</p>
+
+  
+  
+
+<div class="sharing-box">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   
@@ -477,7 +552,7 @@ work human powered and personal.</p></blockquote>
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   
@@ -553,7 +628,7 @@ work human powered and personal.</p></blockquote>
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   
@@ -616,7 +691,7 @@ work human powered and personal.</p></blockquote>
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   
@@ -739,123 +814,7 @@ work human powered and personal.</p></blockquote>
 
 <div class="sharing-box">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-    </article>
-  
-  
-    <article class="post">
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2010/02/25/the-value-of-star-selectively-star-listening/">The Value of *selective* Listening</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-02-25T23:26:00-05:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>I have recently come across this eye opening post. I mean, it probably was eye opening back when it was written in 1995, heck, I bet most Newsweek readers back then yelled something like “I knew it, that Internet thing is bullcrap!”.</p>
-
-<p>This article, astonishingly titled <a href="http://threewordchant.com/2010/02/24/why-the-internet-will-fail-from-1995/">Why the internet will fail</a>, runs down through the many reasons why Internet would be something we would all get over soon really quickly, like we did with Tamagotchis (thankfully).</p>
-
-<p>Now, this is not your run of the mill ignorant news reporter who talks about things s/he doesn’t understand, this was written by <a href="http://en.wikipedia.org/wiki/Clifford_Stoll">Clifford Stoll</a>, an astronomer and technology writer, working out of the Lawrence Berkeley National Laboratory. Yet, he can be quoted saying</p>
-
-<blockquote><p>Yet Nicholas Negroponte, director of the MIT Media Lab, predicts that we’ll soon buy books and newspapers straight over the Intenet. Uh, sure.</p></blockquote>
-
-<p>This author was an authority, someone that we could think that knows much more than we do, so if we disagree with his view we might want to review our opinion.</p>
-
-<p>And this is something that I have seen over and over again, the number of specialists, analysts, etcists, that express an opinion on their field and its completely wrong, completely off base. Of course, we are all humans, we tend to make mistakes, so don’t take this as being judgmental, I’m just saying, we should listen, but we should selectively listen and always make up our own mind and not act on other’s opinions but our own.</p>
-
-  
-  
-
-<div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-    </article>
-  
-  
-    <article class="post">
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2010/02/23/the-value-of-idle-time/">The Value of Idle Time</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-02-23T23:08:00-05:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>I have recently read a quote attributed to Einstein, it reads something along the lines of “the best ideas I have I have them while I shave”. This got me thinking, how much idle time do I have on any given month?</p>
-
-<p>I am an Internet junky, and completely obsessed with efficiency, so I may not be a good statistical sample, but bear with me on this one.</p>
-
-<p>Aftter considering the different idle times we get throughout our daily lives, commuting, personal care time, all meals, I have realized that most of those times I have occupied them (except commute since I work out of my home office) with some supposedly time saving activity, whether it is checking my email, browsing, reading blogs, even when I shower I have managed to be able to do “something”, even if it is just listening to music (come to think about it maybe I could tune some podcasts).</p>
-
-<p>It feels like I’m constantly multitasking, maybe this is a good thing, or maybe not. Even now, I am on my way to a medical check up writing this post on my iPhone.</p>
-
-<p>This forces me to ask myself “What’s the value of idle time?”. For some reason it feels like my ideas begin to flow so much better when I’m not doing something else, when I’m only commuting. It would seem like our information overload and constantly-online capabilities on our smartphones, our inclination to be constatly productive has actually defeated it’s own purpose messing with our creativity.</p>
-
-<p>Listening to other people’s ideas requires not listening to ours, at least for a brief moment. You can use others’ ideas as a trigger for inspiration but at one point the marginal value of listening becomes detrimental to our own creativity and innovation. In the very same way that this happens with consumers indifference curves this can’t be quantifies nor generalized as more people require more listening and some people require less listening.</p>
-
-<p>Ok enough about this, I’m going to continue reading on my kindle now.</p>
-
-  
-  
-
-<div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.com/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.com/index.html" data-size="large">Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="pablo2dot0" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
   
   
   

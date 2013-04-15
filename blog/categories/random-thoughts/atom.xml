@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: random thoughts | heelhook]]></title>
-  <link href="http://heelhook.github.com/blog/categories/random-thoughts/atom.xml" rel="self"/>
-  <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:31:00-05:00</updated>
-  <id>http://heelhook.github.com/</id>
+  <link href="http://heelhook.github.io/blog/categories/random-thoughts/atom.xml" rel="self"/>
+  <link href="http://heelhook.github.io/"/>
+  <updated>2013-04-15T11:26:38-04:00</updated>
+  <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
     
@@ -14,15 +14,52 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The essay is the unit]]></title>
+    <link href="http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit/"/>
+    <updated>2013-04-15T11:18:00-04:00</updated>
+    <id>http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit</id>
+    <content type="html"><![CDATA[<p>While I was reading <a href="https://medium.com/life-hacks/80f8d525b0d8">“The distraction-free iPhone (or ‘Why I’m happier since I
+disabled Safari’)”</a> I noticed a bunch of icons alongside different
+paragraphs.</p>
+
+<p>Obviously, before finishing reading an article about short time span and
+productivity (how many productivity articles have been written in the past
+couple months?!), I had to know what those icons were.</p>
+
+<p>As I suspected, they were discussions that medium.com allows to have on each
+single paragraph.</p>
+
+<!-- more -->
+
+
+<p>I believe this is wrong.</p>
+
+<p>The smallest unit of an essay is not a paragraph, a sentence, or a word. Its the
+essay. Motivating and promoting people to dissect and discuss bits and fragments
+of an essay is a recipe for misunderstandings and half-baked thoughts. I
+understand the motivation, but I believe it sets up the stage to have the wrong
+kind of discussions.</p>
+
+<p>FWIW, the article itself, <a href="https://medium.com/life-hacks/80f8d525b0d8">“The distraction-free iPhone (or ‘Why I’m happier
+since I disabled Safari’)”</a>, is good and a worthwhile experiment. Not an
+insightful comment, but hey, I’d rather try the experiment <a href="https://medium.com/@jakek">Jake</a> proposes
+before commenting on it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Challenges of maintaining a rapidly changing code base]]></title>
-    <link href="http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
+    <link href="http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
     <updated>2013-02-18T19:39:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
+    <id>http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
     <content type="html"><![CDATA[<p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
 
 <p>My cofounder and myself are both (who isn't these days among the HN crowd?) Steve Blank's method practitioners wannabes. We couldn't wait to get our feet wet going through the Startup Owner's Manual's table of contents with our very own concept.</p>
 
 <p>Derek is not a developer, although he is good at screwing up the indention of my HAML files haha — jk derek! As the only developer in the team, I'm the sole responsible for the codebase's sanity (and my own).</p>
+
+<!-- more -->
+
 
 <p>I've managed several codebases before (as pretty much every other developer out there). Coming from CVS and SVN, I learned to love and accept Git's amazing power and minor-ux annoyances (let's not start a flamewar here).</p>
 
@@ -66,9 +103,9 @@
   
   <entry>
     <title type="html"><![CDATA[Company Smells]]></title>
-    <link href="http://heelhook.github.com/blog/2012/12/18/company-smells/"/>
+    <link href="http://heelhook.github.io/blog/2012/12/18/company-smells/"/>
     <updated>2012-12-18T00:36:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2012/12/18/company-smells</id>
+    <id>http://heelhook.github.io/blog/2012/12/18/company-smells</id>
     <content type="html"><![CDATA[<p>Most developers won't need a reminder of what a "* Smell" refers to, but I'll
 assume that the companies that fit the description of this post won't
 (incidentally, those companies probably wouldn't read this blog post either). A
@@ -128,16 +165,16 @@ they get their hands on, is a very powerful company smell: they don't care about
 the practices of people they work with, and they'll likely won't care about the
 type of developers they find.</p>
 
-<p>No, I'm not replying to your (absolutely decontextualized) email.
+<p>No, I'm not replying to your (absolutely decontextualized) email, Angelina.
 Sorry.</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[The value of idle time]]></title>
-    <link href="http://heelhook.github.com/blog/2010/02/23/the-value-of-idle-time/"/>
+    <link href="http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time/"/>
     <updated>2010-02-23T23:08:00-05:00</updated>
-    <id>http://heelhook.github.com/blog/2010/02/23/the-value-of-idle-time</id>
+    <id>http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time</id>
     <content type="html"><![CDATA[<p>I have recently read a quote attributed to Einstein, it reads something along the lines of “the best ideas I have I have them while I shave”. This got me thinking, how much idle time do I have on any given month?</p>
 
 <p>I am an Internet junky, and completely obsessed with efficiency, so I may not be a good statistical sample, but bear with me on this one.</p>

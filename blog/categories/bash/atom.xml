@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: bash | heelhook]]></title>
-  <link href="http://heelhook.github.com/blog/categories/bash/atom.xml" rel="self"/>
-  <link href="http://heelhook.github.com/"/>
-  <updated>2013-02-18T20:31:00-05:00</updated>
-  <id>http://heelhook.github.com/</id>
+  <link href="http://heelhook.github.io/blog/categories/bash/atom.xml" rel="self"/>
+  <link href="http://heelhook.github.io/"/>
+  <updated>2013-04-15T11:26:38-04:00</updated>
+  <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Compare permissions script]]></title>
-    <link href="http://heelhook.github.com/blog/2011/03/15/compare-permissions-script/"/>
+    <link href="http://heelhook.github.io/blog/2011/03/15/compare-permissions-script/"/>
     <updated>2011-03-15T23:15:00-04:00</updated>
-    <id>http://heelhook.github.com/blog/2011/03/15/compare-permissions-script</id>
+    <id>http://heelhook.github.io/blog/2011/03/15/compare-permissions-script</id>
     <content type="html"><![CDATA[<p>Recently I needed to compare some permissions between two directories, I wrote this script that could be useful for someone else:</p>
 
 <p>``` bash</p>
