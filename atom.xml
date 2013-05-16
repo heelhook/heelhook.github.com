@@ -4,7 +4,7 @@
   <title><![CDATA[heelhook]]></title>
   <link href="http://heelhook.github.io/atom.xml" rel="self"/>
   <link href="http://heelhook.github.io/"/>
-  <updated>2013-04-15T11:26:38-04:00</updated>
+  <updated>2013-05-16T11:42:15-07:00</updated>
   <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[The essay is the unit]]></title>
     <link href="http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit/"/>
-    <updated>2013-04-15T11:18:00-04:00</updated>
+    <updated>2013-04-15T11:18:00-07:00</updated>
     <id>http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit</id>
     <content type="html"><![CDATA[<p>While I was reading <a href="https://medium.com/life-hacks/80f8d525b0d8">“The distraction-free iPhone (or ‘Why I’m happier since I
 disabled Safari’)”</a> I noticed a bunch of icons alongside different
@@ -50,7 +50,7 @@ before commenting on it.</p>
   <entry>
     <title type="html"><![CDATA[Challenges of maintaining a rapidly changing code base]]></title>
     <link href="http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
-    <updated>2013-02-18T19:39:00-05:00</updated>
+    <updated>2013-02-18T19:39:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
     <content type="html"><![CDATA[<p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
 
@@ -104,7 +104,7 @@ before commenting on it.</p>
   <entry>
     <title type="html"><![CDATA[iPad blogging on the go]]></title>
     <link href="http://heelhook.github.io/blog/2012/12/28/iPad-blogging-on-the-go/"/>
-    <updated>2012-12-28T05:02:00-05:00</updated>
+    <updated>2012-12-28T05:02:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2012/12/28/iPad-blogging-on-the-go</id>
     <content type="html"><![CDATA[<p>And in preparations for my trip I decided to look into what possibilities I had
 for some light, offline-friendly blogging on my Jekyll blog.</p>
@@ -121,7 +121,7 @@ and publishing it just by&#8230; actually, doing nothing but typing!</p>
   <entry>
     <title type="html"><![CDATA[psyched!]]></title>
     <link href="http://heelhook.github.io/blog/2012/12/27/psyched/"/>
-    <updated>2012-12-27T23:15:00-05:00</updated>
+    <updated>2012-12-27T23:15:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2012/12/27/psyched</id>
     <content type="html"><![CDATA[<p>I&#8217;m psyched, I&#8217;m now T minus ~20 hours away from the start of my journey around
 Southern Africa, loading my physical backpack and unloading my mental one.</p>
@@ -138,7 +138,7 @@ January 19th.</p>
   <entry>
     <title type="html"><![CDATA[Company Smells]]></title>
     <link href="http://heelhook.github.io/blog/2012/12/18/company-smells/"/>
-    <updated>2012-12-18T00:36:00-05:00</updated>
+    <updated>2012-12-18T00:36:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2012/12/18/company-smells</id>
     <content type="html"><![CDATA[<p>Most developers won&#8217;t need a reminder of what a &#8220;* Smell&#8221; refers to, but I&#8217;ll
 assume that the companies that fit the description of this post won&#8217;t
@@ -207,7 +207,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[Intro]]></title>
     <link href="http://heelhook.github.io/blog/2012/07/22/intro/"/>
-    <updated>2012-07-22T08:23:00-04:00</updated>
+    <updated>2012-07-22T08:23:00-07:00</updated>
     <id>http://heelhook.github.io/blog/2012/07/22/intro</id>
     <content type="html"><![CDATA[<p>Testing!</p>
 
@@ -226,7 +226,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[Compare permissions script]]></title>
     <link href="http://heelhook.github.io/blog/2011/03/15/compare-permissions-script/"/>
-    <updated>2011-03-15T23:15:00-04:00</updated>
+    <updated>2011-03-15T23:15:00-07:00</updated>
     <id>http://heelhook.github.io/blog/2011/03/15/compare-permissions-script</id>
     <content type="html"><![CDATA[<p>Recently I needed to compare some permissions between two directories, I wrote this script that could be useful for someone else:</p>
 
@@ -446,7 +446,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[acts_as_authentic nightmare]]></title>
     <link href="http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare/"/>
-    <updated>2010-06-23T23:10:00-04:00</updated>
+    <updated>2010-06-23T23:10:00-07:00</updated>
     <id>http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare</id>
     <content type="html"><![CDATA[<p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
 
@@ -484,7 +484,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[XBMC issues with smb]]></title>
     <link href="http://heelhook.github.io/blog/2010/05/11/xbmc-issues-with-smb/"/>
-    <updated>2010-05-11T23:19:00-04:00</updated>
+    <updated>2010-05-11T23:19:00-07:00</updated>
     <id>http://heelhook.github.io/blog/2010/05/11/xbmc-issues-with-smb</id>
     <content type="html"><![CDATA[<p>I’ve been having issues with XBMC playing files served through samba, I don’t recall when this started, but for sometime I couldn’t even browse the collection of files in my own server. Nothing changed, well, I did upgrade Ubuntu to 10.04 on my server, but I think this was happening before that.</p>
 
@@ -509,7 +509,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[A brave new Media Center revisited]]></title>
     <link href="http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited/"/>
-    <updated>2010-03-06T23:49:00-05:00</updated>
+    <updated>2010-03-06T23:49:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited</id>
     <content type="html"><![CDATA[<p>I recently wrote a post about my new media center, running off my laptop, well, while that setup was sweet and all, there was some sort of hole in it, that is, my laptop went belly up…</p>
 
@@ -594,7 +594,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[The value of *selective* listening]]></title>
     <link href="http://heelhook.github.io/blog/2010/02/25/the-value-of-star-selectively-star-listening/"/>
-    <updated>2010-02-25T23:26:00-05:00</updated>
+    <updated>2010-02-25T23:26:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2010/02/25/the-value-of-star-selectively-star-listening</id>
     <content type="html"><![CDATA[<p>I have recently come across this eye opening post. I mean, it probably was eye opening back when it was written in 1995, heck, I bet most Newsweek readers back then yelled something like “I knew it, that Internet thing is bullcrap!”.</p>
 
@@ -613,7 +613,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[The value of idle time]]></title>
     <link href="http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time/"/>
-    <updated>2010-02-23T23:08:00-05:00</updated>
+    <updated>2010-02-23T23:08:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time</id>
     <content type="html"><![CDATA[<p>I have recently read a quote attributed to Einstein, it reads something along the lines of “the best ideas I have I have them while I shave”. This got me thinking, how much idle time do I have on any given month?</p>
 
@@ -634,7 +634,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[The value of selfishness]]></title>
     <link href="http://heelhook.github.io/blog/2010/02/20/the-value-of-selfishness/"/>
-    <updated>2010-02-20T23:11:00-05:00</updated>
+    <updated>2010-02-20T23:11:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2010/02/20/the-value-of-selfishness</id>
     <content type="html"><![CDATA[<p>I have recently had the opportunity to help out a friend who is launching her own company. This is the first time I have informally gave advice to a fellow entrepreneur and I have found it to be a very rich experience, where a lot of value is easily created, strengthening the “core friendship” in the process.</p>
 

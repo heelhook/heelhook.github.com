@@ -4,7 +4,7 @@
   <title><![CDATA[Category: random thoughts | heelhook]]></title>
   <link href="http://heelhook.github.io/blog/categories/random-thoughts/atom.xml" rel="self"/>
   <link href="http://heelhook.github.io/"/>
-  <updated>2013-04-15T11:26:38-04:00</updated>
+  <updated>2013-05-16T11:42:15-07:00</updated>
   <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[The essay is the unit]]></title>
     <link href="http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit/"/>
-    <updated>2013-04-15T11:18:00-04:00</updated>
+    <updated>2013-04-15T11:18:00-07:00</updated>
     <id>http://heelhook.github.io/blog/2013/04/15/the-essay-is-the-unit</id>
     <content type="html"><![CDATA[<p>While I was reading <a href="https://medium.com/life-hacks/80f8d525b0d8">“The distraction-free iPhone (or ‘Why I’m happier since I
 disabled Safari’)”</a> I noticed a bunch of icons alongside different
@@ -50,7 +50,7 @@ before commenting on it.</p>
   <entry>
     <title type="html"><![CDATA[Challenges of maintaining a rapidly changing code base]]></title>
     <link href="http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
-    <updated>2013-02-18T19:39:00-05:00</updated>
+    <updated>2013-02-18T19:39:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
     <content type="html"><![CDATA[<p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
 
@@ -104,7 +104,7 @@ before commenting on it.</p>
   <entry>
     <title type="html"><![CDATA[Company Smells]]></title>
     <link href="http://heelhook.github.io/blog/2012/12/18/company-smells/"/>
-    <updated>2012-12-18T00:36:00-05:00</updated>
+    <updated>2012-12-18T00:36:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2012/12/18/company-smells</id>
     <content type="html"><![CDATA[<p>Most developers won't need a reminder of what a "* Smell" refers to, but I'll
 assume that the companies that fit the description of this post won't
@@ -173,7 +173,7 @@ Sorry.</p>
   <entry>
     <title type="html"><![CDATA[The value of idle time]]></title>
     <link href="http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time/"/>
-    <updated>2010-02-23T23:08:00-05:00</updated>
+    <updated>2010-02-23T23:08:00-08:00</updated>
     <id>http://heelhook.github.io/blog/2010/02/23/the-value-of-idle-time</id>
     <content type="html"><![CDATA[<p>I have recently read a quote attributed to Einstein, it reads something along the lines of “the best ideas I have I have them while I shave”. This got me thinking, how much idle time do I have on any given month?</p>
 
