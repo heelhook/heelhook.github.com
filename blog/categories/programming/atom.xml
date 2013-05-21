@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | heelhook]]></title>
   <link href="http://heelhook.github.io/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://heelhook.github.io/"/>
-  <updated>2013-05-20T19:56:30-07:00</updated>
+  <updated>2013-05-21T10:03:31-04:00</updated>
   <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Challenges of maintaining a rapidly changing code base]]></title>
     <link href="http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base/"/>
-    <updated>2013-02-18T19:39:00-08:00</updated>
+    <updated>2013-02-18T19:39:00-05:00</updated>
     <id>http://heelhook.github.io/blog/2013/02/18/challenges-of-maintaining-a-rapidly-changing-code-base</id>
     <content type="html"><![CDATA[<p>For the past year, I have been working as cofounder at SkillHound working intensely on the development side. The concept of SkillHound came to be after spending a few months in 2011 reading and implementing proof of concepts data mining code to extract knowledge from git repositories.</p>
 
@@ -70,7 +70,7 @@
   <entry>
     <title type="html"><![CDATA[Compare permissions script]]></title>
     <link href="http://heelhook.github.io/blog/2011/03/15/compare-permissions-script/"/>
-    <updated>2011-03-15T23:15:00-07:00</updated>
+    <updated>2011-03-15T23:15:00-04:00</updated>
     <id>http://heelhook.github.io/blog/2011/03/15/compare-permissions-script</id>
     <content type="html"><![CDATA[<p>Recently I needed to compare some permissions between two directories, I wrote this script that could be useful for someone else:</p>
 
@@ -210,7 +210,7 @@ popd >/dev/null</p>
   <entry>
     <title type="html"><![CDATA[acts_as_authentic nightmare]]></title>
     <link href="http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare/"/>
-    <updated>2010-06-23T23:10:00-07:00</updated>
+    <updated>2010-06-23T23:10:00-04:00</updated>
     <id>http://heelhook.github.io/blog/2010/06/23/acts-as-authentic-nightmare</id>
     <content type="html"><![CDATA[<p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
 

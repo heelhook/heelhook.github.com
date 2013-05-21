@@ -9,7 +9,7 @@
   <meta name="author" content="Pablo Fernandez">
 
   
-  <meta name="description" content="A Brave New Media Center Revisited Mar 6th, 2010 I recently wrote a post about my new media center, running off my laptop, well, while that setup &hellip;">
+  <meta name="description" content="Acts_as_authentic Nightmare Jun 23rd, 2010 So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +105,145 @@
     
       <h2 class="entry-title">
         
+        <a href="/blog/2010/06/23/acts-as-authentic-nightmare/">Acts_as_authentic Nightmare</a>
+        
+      </h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-23T23:10:00-04:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <p>So I decided to do a few tests on the Server Protectors’ website and noticed a few annoyances with the register form, I decided to delve in and fix it, just a couple of extra validations, not too much.</p>
+
+<p>Half an hour later I was pretty much ready to do some open heart surgery on authlogic, man is the configuration of act_as_authentic confusing! And of course, RTFMing doesn’t work, there is not a single example of how changing the default act_as_authentic configuration works!</p>
+
+<p>Searching around I found a few persons with the same problem and no solutions, so I thought I should share how I did it, or rather, what I did.</p>
+
+<p>This is the resulting code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">acts_as_authentic</span> <span class="k">do</span> <span class="o">|</span><span class="n">c</span><span class="o">|</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_uniqueness_of_email_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_length_of_login_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:minimum</span> <span class="o">=&gt;</span> <span class="mi">4</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_format_of_login_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:with</span> <span class="o">=&gt;</span> <span class="no">Authlogic</span><span class="o">::</span><span class="no">Regex</span><span class="o">.</span><span class="n">login</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_length_of_email_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:minimum</span> <span class="o">=&gt;</span> <span class="mi">4</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_confirmation_of_password_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">}</span>
+</span><span class='line'> <span class="n">c</span><span class="o">.</span><span class="n">validates_length_of_password_confirmation_field_options</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:if</span> <span class="o">=&gt;</span> <span class="s2">&quot;false&quot;</span><span class="p">,</span> <span class="ss">:minimum</span> <span class="o">=&gt;</span> <span class="mi">4</span> <span class="p">}</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So as you can see a couple of options are a bit lame, like having a minimum when the if is being set to false, well, if you remove the minumum validates_length_of will complain (it makes sense from validates_length_of point of view, after all, if you are never going to be using the validation why call the function at all?)</p>
+
+<p>I hope this helps and saves some time.</p>
+
+  
+  
+
+<div class="sharing-box">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/blog/page/2/index.html" data-via="heelhookrc" data-counturl="http://heelhook.github.io/blog/page/2/index.html" data-size="large">Tweet</a>
+  
+  
+  
+</div>
+
+    </article>
+  
+  
+    <article class="post">
+      
+  <header>
+    
+      <h2 class="entry-title">
+        
+        <a href="/blog/2010/05/11/xbmc-issues-with-smb/">XBMC Issues With Smb</a>
+        
+      </h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-11T23:19:00-04:00" pubdate data-updated="true">May 11<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <p>I’ve been having issues with XBMC playing files served through samba, I don’t recall when this started, but for sometime I couldn’t even browse the collection of files in my own server. Nothing changed, well, I did upgrade Ubuntu to 10.04 on my server, but I think this was happening before that.</p>
+
+<p>Anyway, I browsed the internet and didn’t find anything related to this error or how to fix it.</p>
+
+<p>After looking around in the configuration I’ve found something which caught my eye and I got it working.</p>
+
+<p>The error I was getting was:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>23:09:42 T:3077850992 M:1831804928   ERROR: SMBDirectory-&gt;GetDirectory: Unable to open directory : 'smb://'
+</span><span class='line'>unix_err:'2' error : 'No such file or directory'
+</span><span class='line'>23:09:42 T:3077850992 M:1831804928   ERROR: GetDirectory - Error getting smb://</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And what I had to do is remove the XML path in <code>$HOME/.xbmc/userdata/guisettings.xml</code> that started with the tag <code>&lt;smb&gt;</code>. Removed that, restarted XBMC and things started to work again.</p>
+
+  
+  
+
+<div class="sharing-box">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/blog/page/2/index.html" data-via="heelhookrc" data-counturl="http://heelhook.github.io/blog/page/2/index.html" data-size="large">Tweet</a>
+  
+  
+  
+</div>
+
+    </article>
+  
+  
+    <article class="post">
+      
+  <header>
+    
+      <h2 class="entry-title">
+        
         <a href="/blog/2010/03/06/a-brave-new-media-center-revisited/">A Brave New Media Center Revisited</a>
         
       </h2>
@@ -123,7 +262,7 @@
   
 
 
-<time datetime="2010-03-06T23:49:00-08:00" pubdate data-updated="true">Mar 6<span>th</span>, 2010</time>
+<time datetime="2010-03-06T23:49:00-05:00" pubdate data-updated="true">Mar 6<span>th</span>, 2010</time>
         
       </p>
     
@@ -246,7 +385,7 @@
   
 
 
-<time datetime="2010-02-25T23:26:00-08:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
+<time datetime="2010-02-25T23:26:00-05:00" pubdate data-updated="true">Feb 25<span>th</span>, 2010</time>
         
       </p>
     
@@ -303,7 +442,7 @@
   
 
 
-<time datetime="2010-02-23T23:08:00-08:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2010</time>
+<time datetime="2010-02-23T23:08:00-05:00" pubdate data-updated="true">Feb 23<span>rd</span>, 2010</time>
         
       </p>
     
@@ -362,7 +501,7 @@
   
 
 
-<time datetime="2010-02-20T23:11:00-08:00" pubdate data-updated="true">Feb 20<span>th</span>, 2010</time>
+<time datetime="2010-02-20T23:11:00-05:00" pubdate data-updated="true">Feb 20<span>th</span>, 2010</time>
         
       </p>
     

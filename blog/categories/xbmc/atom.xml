@@ -4,7 +4,7 @@
   <title><![CDATA[Category: xbmc | heelhook]]></title>
   <link href="http://heelhook.github.io/blog/categories/xbmc/atom.xml" rel="self"/>
   <link href="http://heelhook.github.io/"/>
-  <updated>2013-05-20T19:56:30-07:00</updated>
+  <updated>2013-05-21T10:03:31-04:00</updated>
   <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[XBMC issues with smb]]></title>
     <link href="http://heelhook.github.io/blog/2010/05/11/xbmc-issues-with-smb/"/>
-    <updated>2010-05-11T23:19:00-07:00</updated>
+    <updated>2010-05-11T23:19:00-04:00</updated>
     <id>http://heelhook.github.io/blog/2010/05/11/xbmc-issues-with-smb</id>
     <content type="html"><![CDATA[<p>I’ve been having issues with XBMC playing files served through samba, I don’t recall when this started, but for sometime I couldn’t even browse the collection of files in my own server. Nothing changed, well, I did upgrade Ubuntu to 10.04 on my server, but I think this was happening before that.</p>
 
@@ -39,7 +39,7 @@ unix_err:'2' error : 'No such file or directory'
   <entry>
     <title type="html"><![CDATA[A brave new Media Center revisited]]></title>
     <link href="http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited/"/>
-    <updated>2010-03-06T23:49:00-08:00</updated>
+    <updated>2010-03-06T23:49:00-05:00</updated>
     <id>http://heelhook.github.io/blog/2010/03/06/a-brave-new-media-center-revisited</id>
     <content type="html"><![CDATA[<p>I recently wrote a post about my new media center, running off my laptop, well, while that setup was sweet and all, there was some sort of hole in it, that is, my laptop went belly up…</p>
 

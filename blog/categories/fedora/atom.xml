@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fedora | heelhook]]></title>
   <link href="http://heelhook.github.io/blog/categories/fedora/atom.xml" rel="self"/>
   <link href="http://heelhook.github.io/"/>
-  <updated>2013-05-20T19:56:30-07:00</updated>
+  <updated>2013-05-21T10:03:31-04:00</updated>
   <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Compare permissions script]]></title>
     <link href="http://heelhook.github.io/blog/2011/03/15/compare-permissions-script/"/>
-    <updated>2011-03-15T23:15:00-07:00</updated>
+    <updated>2011-03-15T23:15:00-04:00</updated>
     <id>http://heelhook.github.io/blog/2011/03/15/compare-permissions-script</id>
     <content type="html"><![CDATA[<p>Recently I needed to compare some permissions between two directories, I wrote this script that could be useful for someone else:</p>
 
