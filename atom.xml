@@ -4,7 +4,7 @@
   <title><![CDATA[heelhook]]></title>
   <link href="http://heelhook.github.io/atom.xml" rel="self"/>
   <link href="http://heelhook.github.io/"/>
-  <updated>2013-05-29T18:04:04-03:00</updated>
+  <updated>2013-05-29T18:14:10-03:00</updated>
   <id>http://heelhook.github.io/</id>
   <author>
     <name><![CDATA[Pablo Fernandez]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Hacker School]]></title>
-    <link href="http://heelhook.github.io/blog/2013/05/29/hacker-school/"/>
-    <updated>2013-05-29T18:02:00-03:00</updated>
-    <id>http://heelhook.github.io/blog/2013/05/29/hacker-school</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[The essay is the unit]]></title>

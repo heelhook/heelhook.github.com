@@ -9,7 +9,8 @@
   <meta name="author" content="Pablo Fernandez">
 
   
-  <meta name="description" content="Hacker School May 29th, 2013 Tweet The Essay Is the Unit Apr 15th, 2013 While I was reading “The distraction-free iPhone (or ‘Why I’m happier since &hellip;">
+  <meta name="description" content="The Essay Is the Unit Apr 15th, 2013 While I was reading “The distraction-free iPhone (or ‘Why I’m happier since I
+disabled Safari’)” I noticed a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -97,53 +98,6 @@
   </header>
   <section id="main">
       
-  
-  
-    <article class="post">
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2013/05/29/hacker-school/">Hacker School</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-29T18:02:00-03:00" pubdate data-updated="true">May 29<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  
-
-  
-  
-
-<div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="heelhookrc" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-    </article>
   
   
     <article class="post">
@@ -731,6 +685,129 @@ work human powered and personal.</p></blockquote>
 
 
 <p>And what I had to do is remove the XML path in <code>$HOME/.xbmc/userdata/guisettings.xml</code> that started with the tag <code>&lt;smb&gt;</code>. Removed that, restarted XBMC and things started to work again.</p>
+
+  
+  
+
+<div class="sharing-box">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://heelhook.github.io/index.html" data-via="heelhookrc" data-counturl="http://heelhook.github.io/index.html" data-size="large">Tweet</a>
+  
+  
+  
+</div>
+
+    </article>
+  
+  
+    <article class="post">
+      
+  <header>
+    
+      <h2 class="entry-title">
+        
+        <a href="/blog/2010/03/06/a-brave-new-media-center-revisited/">A Brave New Media Center Revisited</a>
+        
+      </h2>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-03-06T23:49:00-03:00" pubdate data-updated="true">Mar 6<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <p>I recently wrote a post about my new media center, running off my laptop, well, while that setup was sweet and all, there was some sort of hole in it, that is, my laptop went belly up…</p>
+
+<p>That was quite unfortunate, but it gave me the possibility to play with some new stuff, namely ITX setups.</p>
+
+<p>I have finished yesterday building my ITX box, an Intel D510mo with an Atom D510 processor (dual with hyperthreading so 4 threads), 2 GB of RAM at 800 Mhz, WiFi PCI card on a Vitsuba Blackbox case, with a generic DVD-RW.</p>
+
+<p>The setup is very sweet, I had lots of troubles building the system, at one point I thought my motherboard was faulty and I had to take it back to the store, but it seems the motherboard was ok, it was simply a matter of the mother producing a short while sitting in the case because of a mislocated screw in the case.</p>
+
+<p>After the case was done I proceeded to install Ubuntu Karmic 9.10, to my surprise I had lots of troubles installing it, I had to perform the installation booting the netinstall through PXE (since I was out of CDs and all stores were closed). Once I was able to install Ubuntu I found that Ubuntu didn’t support the video card in the motherboard, and during the boot sequence the screen would go blank and there was pretty much nothing I could do about it.</p>
+
+<p>Googling around I found other users with the same problem and determined to go with the same solution others had used… saying goodbye to Ubuntu and the beautiful Debian and APT world and totally selling out to the Fedora and Red Hat town (notice my strong bias :p).</p>
+
+<p>I went through the horrible Fedora installation experience which is like getting hit on the ballsack while driving on a bike with no seat, configured GDM to autostart (which amazingly is not supported through gdm-config) and then I proceeded to build XBMC (since there is no XBMC build for non debian distributions (well done, and no, I’m not being ironic)).</p>
+
+<p>It turns out building something like XBMC with support for many different codecs is not as straightforward as imaginable, who would have thought?! (now I am being ironic).</p>
+
+<p>Here are some tips for others:</p>
+
+<ul>
+<li>Add extra repositories (Fedora sucks)</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>su -c <span class="s1">&#39;rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-stable.noarch.rpm&#39;</span>
+</span><span class='line'>su -c <span class="s2">&quot;rpm -ivh http://rpm.livna.org/livna-release.rpm&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Install extra packages (Fedora blows)</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>yum -y install ccache subversion git gcc-c++ boost-devel mesa-libGL-devel glew-devel libmad-devel libjpeg-devel libsamplerate-devel libogg-devel libvorbis-devel freetype-devel fontconfig-devel bzip2-devel fribidi-devel sqlite-devel mysql-devel libpng-devel pcre-devel lzo-devel libcdio-devel libsmbclient-devel SDL-devel SDL_image-devel SDL_mixer-devel enca-devel jasper-devel libmms-devel libXt-devel libXtst-devel libXmu-devel libXinerama-devel libcurl-devel dbus-devel hal-devel pulseaudio-libs-devel pulseaudio-libs-zeroconf faac-devel avahi-devel ffmpeg-devel a52dec-devel libdca-devel faad2-devel mpeg2dec-devel libass-devel libmpcdec-devel flac-devel wavpack-devel python-devel cmake gperf unzip make libtool flex bison libtiff-devel avbin-devel libmicrohttpd-devel libdvdcss-devel faad2-devel
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Fix paths (Fedora reeks)</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ln -s /usr/lib/mysql/libmysqlclient.so.16.*.* /usr/lib/libmysqlclient.so
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Get XBMC</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>svn co https://xbmc.svn.sourceforge.net/svnroot/xbmc/trunk/
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Build XBMC</li>
+</ul>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>./bootstrap
+</span><span class='line'>./configure --disable-debug --enable-external-libfaad --enable-external-libdts --enable-mid --enable-profiling --enable-external-libmad --enable-external-liba52 --enable-external-libmpeg2 --enable-external-libass --enable-external-libvorbis --enable-external-libogg --enable-external-libmpcdec --enable-external-libflac --enable-external-libwavpack --enable-external-python
+</span><span class='line'>make -j 4
+</span><span class='line'>make install
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Note that the <code>make -j 4</code> command might succeed but not finish, I have found a few times that when using make in parallel even with multiple cores it will skip files, you want to use <code>make -j 4</code> a few times to accelerate the process but do make sure its actually finished running make.</p>
 
   
   
